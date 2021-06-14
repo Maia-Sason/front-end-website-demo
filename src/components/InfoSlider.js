@@ -16,7 +16,7 @@ function InfoSlider() {
                 <p className="font info-slider-body">
                 Occaecat deserunt nostrud in officia fugiat consectetur. Dolor laborum nostrud consectetur sit excepteur ut. Pariatur esse nisi in nisi sint fugiat nisi dolor irure consequat.
                 </p>
-                <div className="font info-slider-button"><button>LEARN MORE</button><span className="font">></span></div>
+                <div className="font info-slider-button"><button>LEARN MORE</button><span className="font"> {`>`} </span></div>
             </div>
         </div>
     )

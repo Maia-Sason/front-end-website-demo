@@ -50,7 +50,7 @@
   background-color: #324242;
   display: flex;
   height: 5.5em;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   width: 100%;
   z-index: 4;
@@ -60,7 +60,8 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  transform: translate(50%, 15%)
+  margin: 10px;
+  margin-left: 20px;
 }
 
 .logo {
@@ -131,7 +132,7 @@
   top: 6.3vw;
   padding: 20px;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.767);
+  background-color: rgba(255, 255, 255, 0.892);
 }
 
 .inner-block {
@@ -144,11 +145,6 @@
   font-weight: 200;
   font-size: 60px;
 
-}
-
-.test {
-  height: 150vh;
-  background-color: red;
 }
 
 /* InfoBox */
@@ -167,6 +163,7 @@
 .box-header-font {
   font-size: 36px;
   font-weight: 100;
+  line-height: 1px;
 
 }
 
@@ -193,6 +190,7 @@
 }
 
 .info-slider-linkbar {
+  overflow-y: scroll;
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
@@ -260,7 +258,7 @@ h2 {
 }
 
 .info-slider-button:hover {
-  transform: translateX(1%);
+  transform: translateX(3%);
 }
 
 .info-slider-button:hover > span {

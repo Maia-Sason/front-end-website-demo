@@ -31,9 +31,8 @@ function Home() {
                 <InfoSlider/>
             </InfoBox>
             <InfoBox boxColor="#006478" textColor="white" headerText="Why Lorem Ipsum?"/>
-              <div className="test">
-                
-              </div>
+            <InfoBox boxColor="#ECECEC" textColor="#747474" headerText="Latest News"/>
+            
         </>
     )
 }
