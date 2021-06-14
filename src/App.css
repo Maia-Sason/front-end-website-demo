@@ -35,6 +35,16 @@
   color: #444;
 }
 
+/* Misc */
+.section-break {
+  border-bottom: 4px solid #C3BEAF;
+  margin-bottom: 40px;
+}
+
+.break1 {
+  width: 10em;
+}
+
 /* Navbar */
 .navbar-container {
   background-color: #324242;
@@ -106,11 +116,13 @@
 }
 
 .fade-image > img {
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 100%;
 }
 
 .block {
+  z-index: 1;
   position: absolute;
   display: flex;
   align-items: center;
@@ -129,7 +141,136 @@
 .block-header {
   color: #005F5F;
   letter-spacing: -0.0416666667em;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 60px;
 
+}
+
+.test {
+  height: 150vh;
+  background-color: red;
+}
+
+/* InfoBox */
+
+.info-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-top: -4px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.box-header-font {
+  font-size: 36px;
+  font-weight: 100;
+
+}
+
+.box-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box-children {
+  width: 85%;
+}
+
+/* Info Slider Box */
+
+.info-slider-container {
+  width: 100%;
+  text-align: left;
+  background: white;
+  margin-bottom: 40px;
+  /* padding-top: 20px; */
+}
+
+.info-slider-linkbar {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #c2c2c2;
+  justify-content: space-between;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.info-link {
+  font-weight: 700;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #797878;
+  font-size: 16px;
+  border-style: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.info-link:hover {
+  color: #006E82;
+}
+
+.info-slider-content {
+  padding: 20px 30px 0px;
+}
+
+.info-slider-content:active {
+  background: red;
+}
+
+.info-slider-body {
+  color: #747474;
+  width: 95%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.info-slider-button {
+  display: flex;
+  color: #005F5F;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 200px;
+  
+  cursor: pointer;
+  position: relative;
+  transition: .3s ease;
+}
+
+.info-slider-button > button {
+  cursor: pointer;
+  color: #005F5F;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.0516666667em;
+  padding: 0px;
+  border: none;
+  background: none;
+}
+
+.info-slider-button:hover {
+  transform: translateX(1%);
+}
+
+.info-slider-button:hover > span {
+  transform: translateX(90%);
+  opacity: 0;
+}
+
+.info-slider-button > span {
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 8px;
+  transition: .2s ease-in-out;
 }
