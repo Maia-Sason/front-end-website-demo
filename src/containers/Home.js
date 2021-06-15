@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import image1 from '../images/bailey.jpg'
+import house2 from '../images/house2.jpg'
 import InfoBox from '../components/InfoBox'
 import InfoSlider from '../components/InfoSlider'
+import Parallax from '../components/Parallax'
 
 function Home() {
     const [offSetY, setOffSetY] = useState(0);
@@ -32,7 +34,8 @@ function Home() {
             </InfoBox>
             <InfoBox boxColor="#006478" textColor="white" headerText="Why Lorem Ipsum?"/>
             <InfoBox boxColor="#ECECEC" textColor="#747474" headerText="Latest News"/>
-            
+            <Parallax offSetY={offSetY} image={house2}/>
+            <InfoBox boxColor="#ECECEC" textColor="#747474" headerText="What makes us Lorem Ipsum?"></InfoBox>
         </>
     )
 }
