@@ -1,10 +1,21 @@
-import { useState, useEffect } from 'react'
+import { ReactDom } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 function Parallax ({image, title, content, offSetY}) {
+    const [offSetDiv, setOffSetDiv] = useState(0);
+    const ref = useRef(null);
+
+    useEffect( () => {
+        setOffSetDiv(setTimeout(() => {
+            ref.current.getBoundingClientRect();
+         }, 300))
+         console.log(ref.current.getBoundingClientRect())
+    }, [])
+
     return (
-    <div>
-        <div className="parallax-content" style={{background: `url('${image}') linear-gradient(rgba(0,0,0,.5)`}}>
-            {/* <img className="parallax-image" src={`${image}`} style={{ transform: `translateY(${ offSetY * -0.006}em)`}}></img> */}
+    <div ref={ref}>
+        <div className="parallax-content">
+            <img className="parallax-image" src={`${image}`} style={{ transform: `translateY(${ ((offSetY - 913) * -0.05)}px)`}}></img>
         </div>
         <div className="parallax-body">
             <h2 className="parallax-title">{title}</h2>
